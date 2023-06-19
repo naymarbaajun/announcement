@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}"> -->
+    <title>form</title>
+</head>
+
+    
+<body>
+    <h1>STUDENT FORM</h1>
+    <label for="y"></label>
+    <div class="container">
+            <form id="myform" onsubmit="return validateForm()">
+                <label for="fname">FirstName </label>
+            <input type="text" id="fname" name="fname" required maxlength="20"><br><br>
+
+            <label for="lname">LastName </label>
+            <input type="text" id="lname" name="lname" required maxlength="20"><br><br>
+            
+         
+            <label for="course">Course </label>
+            <input type="text" id="course" name="course" required ><br><br>
+ 
+            
+             <label for="gender">Gender</label>
+             <input type="radio" class="radio" id="genderMale" name="gender" value="male" required>Male
+             <input type="radio" class="radio" id="genderFemale" name="gender" value="female" required>Female 
+            <br><br>
+ 
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" required><br><br>
+ 
+        
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required maxlength="8" minlength="6"><br><br>
+         
+              <label for="comfirm" >Comfirm</label>
+              <input type="comfirm" id="comfirm" name="comfirm" required maxlength="8" minlength="6"><br><br>
+         
+         
+         
+         <div class="button">
+            <button type="submit" class="btn">SEND</button>
+         </div>
+         
+      </form>          
+    </div>
+    
+
+
+<script src=" {% static 'js/script.js' %}">
+    
+</script>    
+</body>
+</html>

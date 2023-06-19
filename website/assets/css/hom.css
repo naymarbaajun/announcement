@@ -1,0 +1,31 @@
+body{
+    background-color: #0D98BA;
+    
+
+}
+h1{
+    text-align: center;
+    background-color: burlywood;
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    height: 350px;
+    margin-top: 200px;
+    width: 300px;
+    background-color: #FFFFD5;
+    
+
+}
+.image{
+    width: 200px;
+    height:100px;
+    float: left;
+}
+.footer{
+    position: fixed;
+    height: 150px;
+    width: 100%;
+    background-color: lightskyblue;
+    margin-top: 150px;
+}

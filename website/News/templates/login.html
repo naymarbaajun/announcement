@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first page</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/hom.css' %}">
+   
+ 
+</head>
+<body>
+    <h1>THE STATE UNIVERSITY OF ZANZIBAR(SUZA)</h1>
+
+    <div class="image">
+        <img src="image/img1.png"  alt="">
+
+    </div>
+    <center>
+      <div class="container"  >
+        <h2>LOGIN</h2>
+        <p>please enter your credentials  to login.</p>
+        <form id="hello">
+            <label for="username">Username</label>
+            <input type="text" id="username"><br></br>
+            <label for="passowrd">Password</label>
+            <input type="password" id="password"><br><br>
+            <a class="forget" href="forget password">forget password</a><br><br>
+            <button type="submit">login</button>
+            <p class="message">Not registered? <a href="">Create an account</a></p>
+        </form>
+        <p id="loginMessage"></p>
+     </div>
+     </center>
+     <div class="footer" ><b><center><p>& copy;2023 SUZA . All rights reserved.</p></center></b>
+
+     </div>
+     
+</body>
+</html>
